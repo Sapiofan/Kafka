@@ -1,4 +1,4 @@
-package com.sapiofan.producer;
+package com.sapiofan.kafka.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +10,6 @@ public class KafkaTopic {
 
     @Bean
     public NewTopic topic() {
-        return TopicBuilder.name("wiki").build();
+        return TopicBuilder.name("users").build();
     }
 }
